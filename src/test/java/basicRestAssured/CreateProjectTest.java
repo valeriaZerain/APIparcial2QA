@@ -51,7 +51,9 @@ public class CreateProjectTest {
         body.put("Icon",7);
 
         given()
-                .headers("Token","aasdasdsdasd")
+                .auth()
+                .preemptive()
+                .basic("api2024@2024.com","12345")
                 .body(body.toString())
                 .log().all()
        .when()
