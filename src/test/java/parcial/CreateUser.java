@@ -20,9 +20,12 @@ public class CreateUser {
         Response response = given()
                 .body(body.toString())
                 .post("https://todo.ly/api/items.json");
+
         response.then()
                 .statusCode(200)
                 .body("Email", equalTo(body.get("Email")))
                 .log().all();
+
+        
     }
 }
