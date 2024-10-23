@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - CreateItems</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>CreateItems</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/parcial.html">parcial</a> &gt; CreateItems</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">13.851s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Create and delete items</td>
+<td class="success">createAndDeleteItems()</td>
+<td class="success">13.851s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Request method:	GET
+Request URI:	https://todo.ly/api/authentication/token.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Authorization=Basic dmFsZXJpYS5wYXJjaWFsQHFhLmNvbTpQcnVlYmFzMTIz
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=xwstgvsfuvwlb3cv5zeuumqw; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 23 Oct 2024 22:06:55 GMT
+Content-Length: 130
+
+{
+    &quot;TokenString&quot;: &quot;e81d81c860884a5f9bdc5af2c710be38&quot;,
+    &quot;UserEmail&quot;: &quot;valeria.parcial@qa.com&quot;,
+    &quot;ExpirationTime&quot;: &quot;/Date(1729739216137)/&quot;
+}
+Request method:	POST
+Request URI:	https://todo.ly/api/items.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=e81d81c860884a5f9bdc5af2c710be38
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{&quot;Content&quot;:&quot;CreateItem&quot;}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=c3akko5cxal20nqnciq4ovih; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 23 Oct 2024 22:06:57 GMT
+Content-Length: 531
+
+{
+    &quot;Id&quot;: 11591123,
+    &quot;Content&quot;: &quot;CreateItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: false,
+    &quot;ProjectId&quot;: null,
+    &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
+    &quot;Collapsed&quot;: false,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: null,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1729721218101)/&quot;,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1729721218087)/&quot;,
+    &quot;LastCheckedDate&quot;: null,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1729721218087)/&quot;,
+    &quot;Deleted&quot;: false,
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: false,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 805548
+}
+Request method:	DELETE
+Request URI:	https://todo.ly/api/items/11591123.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=e81d81c860884a5f9bdc5af2c710be38
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=a4eaqr5vcsnwmanplxg2p4o0; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 23 Oct 2024 22:06:58 GMT
+Content-Length: 530
+
+{
+    &quot;Id&quot;: 11591123,
+    &quot;Content&quot;: &quot;CreateItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: false,
+    &quot;ProjectId&quot;: null,
+    &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
+    &quot;Collapsed&quot;: false,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: null,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1729721219442)/&quot;,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1729721218087)/&quot;,
+    &quot;LastCheckedDate&quot;: null,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1729721219443)/&quot;,
+    &quot;Deleted&quot;: true,
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: false,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 805548
+}
+Request method:	POST
+Request URI:	https://todo.ly/api/items.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=e81d81c860884a5f9bdc5af2c710be38
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{&quot;Content&quot;:&quot;CreateItem&quot;}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=qw5josoxgizmwtlt3xmruahu; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 23 Oct 2024 22:07:00 GMT
+Content-Length: 531
+
+{
+    &quot;Id&quot;: 11591124,
+    &quot;Content&quot;: &quot;CreateItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: false,
+    &quot;ProjectId&quot;: null,
+    &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
+    &quot;Collapsed&quot;: false,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: null,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1729721220737)/&quot;,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1729721220723)/&quot;,
+    &quot;LastCheckedDate&quot;: null,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1729721220723)/&quot;,
+    &quot;Deleted&quot;: false,
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: false,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 805548
+}
+Request method:	DELETE
+Request URI:	https://todo.ly/api/items/11591124.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=e81d81c860884a5f9bdc5af2c710be38
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=pez0fdvwmpwtchbpubjdjeft; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 23 Oct 2024 22:07:01 GMT
+Content-Length: 530
+
+{
+    &quot;Id&quot;: 11591124,
+    &quot;Content&quot;: &quot;CreateItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: false,
+    &quot;ProjectId&quot;: null,
+    &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
+    &quot;Collapsed&quot;: false,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: null,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1729721221969)/&quot;,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1729721220723)/&quot;,
+    &quot;LastCheckedDate&quot;: null,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1729721221953)/&quot;,
+    &quot;Deleted&quot;: true,
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: false,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 805548
+}
+Request method:	POST
+Request URI:	https://todo.ly/api/items.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=e81d81c860884a5f9bdc5af2c710be38
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{&quot;Content&quot;:&quot;CreateItem&quot;}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=urm3fwstnj5sssx4euhx421d; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 23 Oct 2024 22:07:03 GMT
+Content-Length: 531
+
+{
+    &quot;Id&quot;: 11591125,
+    &quot;Content&quot;: &quot;CreateItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: false,
+    &quot;ProjectId&quot;: null,
+    &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
+    &quot;Collapsed&quot;: false,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: null,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1729721223280)/&quot;,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1729721223263)/&quot;,
+    &quot;LastCheckedDate&quot;: null,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1729721223263)/&quot;,
+    &quot;Deleted&quot;: false,
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: false,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 805548
+}
+Request method:	DELETE
+Request URI:	https://todo.ly/api/items/11591125.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=e81d81c860884a5f9bdc5af2c710be38
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=xoaqoaglm4wneyt3psfkmevl; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 23 Oct 2024 22:07:04 GMT
+Content-Length: 530
+
+{
+    &quot;Id&quot;: 11591125,
+    &quot;Content&quot;: &quot;CreateItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: false,
+    &quot;ProjectId&quot;: null,
+    &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
+    &quot;Collapsed&quot;: false,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: null,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1729721224575)/&quot;,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1729721223263)/&quot;,
+    &quot;LastCheckedDate&quot;: null,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1729721224560)/&quot;,
+    &quot;Deleted&quot;: true,
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: false,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 805548
+}
+Request method:	POST
+Request URI:	https://todo.ly/api/items.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=e81d81c860884a5f9bdc5af2c710be38
+				Accept=*/*
+				Content-Type=text/plain; charset=ISO-8859-1
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:
+{&quot;Content&quot;:&quot;CreateItem&quot;}
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=2k4h5g4oxkk2z5tcn40r5wgs; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 23 Oct 2024 22:07:05 GMT
+Content-Length: 531
+
+{
+    &quot;Id&quot;: 11591126,
+    &quot;Content&quot;: &quot;CreateItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: false,
+    &quot;ProjectId&quot;: null,
+    &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
+    &quot;Collapsed&quot;: false,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: null,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1729721225838)/&quot;,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1729721225807)/&quot;,
+    &quot;LastCheckedDate&quot;: null,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1729721225807)/&quot;,
+    &quot;Deleted&quot;: false,
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: false,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 805548
+}
+Request method:	DELETE
+Request URI:	https://todo.ly/api/items/11591126.json
+Proxy:			&lt;none&gt;
+Request params:	&lt;none&gt;
+Query params:	&lt;none&gt;
+Form params:	&lt;none&gt;
+Path params:	&lt;none&gt;
+Headers:		Token=e81d81c860884a5f9bdc5af2c710be38
+				Accept=*/*
+Cookies:		&lt;none&gt;
+Multiparts:		&lt;none&gt;
+Body:			&lt;none&gt;
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Content-Type: application/json; charset=utf-8
+Expires: -1
+Server: Microsoft-IIS/8.0
+Set-Cookie: ASP.NET_SessionId=pfrviuuwduezgidamhc4hlly; path=/; HttpOnly; SameSite=Lax
+X-AspNetMvc-Version: 2.0
+X-AspNet-Version: 4.0.30319
+X-Powered-By: ASP.NET
+Date: Wed, 23 Oct 2024 22:07:07 GMT
+Content-Length: 530
+
+{
+    &quot;Id&quot;: 11591126,
+    &quot;Content&quot;: &quot;CreateItem&quot;,
+    &quot;ItemType&quot;: 1,
+    &quot;Checked&quot;: false,
+    &quot;ProjectId&quot;: null,
+    &quot;ParentId&quot;: null,
+    &quot;Path&quot;: &quot;&quot;,
+    &quot;Collapsed&quot;: false,
+    &quot;DateString&quot;: null,
+    &quot;DateStringPriority&quot;: 0,
+    &quot;DueDate&quot;: &quot;&quot;,
+    &quot;Recurrence&quot;: null,
+    &quot;ItemOrder&quot;: null,
+    &quot;Priority&quot;: 4,
+    &quot;LastSyncedDateTime&quot;: &quot;/Date(1729721227055)/&quot;,
+    &quot;Children&quot;: [
+        
+    ],
+    &quot;DueDateTime&quot;: null,
+    &quot;CreatedDate&quot;: &quot;/Date(1729721225807)/&quot;,
+    &quot;LastCheckedDate&quot;: null,
+    &quot;LastUpdatedDate&quot;: &quot;/Date(1729721227040)/&quot;,
+    &quot;Deleted&quot;: true,
+    &quot;Notes&quot;: &quot;&quot;,
+    &quot;InHistory&quot;: false,
+    &quot;SyncClientCreationId&quot;: null,
+    &quot;DueTimeSpecified&quot;: true,
+    &quot;OwnerId&quot;: 805548
+}
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.4</a> at 23 oct. 2024 18:07:05</p>
+</div>
+</div>
+</body>
+</html>

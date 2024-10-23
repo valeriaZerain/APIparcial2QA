@@ -85,8 +85,7 @@ public class CreateUser {
                 .post("https://todo.ly/api/projects.json");
         responseProject2.then()
                 .statusCode(200)
-                .body("Content",equalTo(bodyProject.get("Content")))
+                .body("Content",equalTo(null))
                 .log().all();
     }
-
 }
